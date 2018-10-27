@@ -54,7 +54,7 @@ def get_wheel_elfdata(wheel_fn: str):
                     uses_ucs2_symbols |= any(
                         True for _ in elf_find_ucs2_symbols(elf))
             full_external_refs[fn] = lddtree_external_references(elftree,
-                                                                 ctx.path)
+                                                                 ctx.wheel_path)
 
 
     log.debug(json.dumps(full_elftree, indent=4))
