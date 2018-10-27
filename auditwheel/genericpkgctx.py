@@ -1,4 +1,4 @@
-from .wheeltools import InWheelCtx
+from wheeltools import InWheelCtx
 from .condatools import InCondaPkgCtx
 
 

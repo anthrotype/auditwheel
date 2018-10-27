@@ -4,8 +4,8 @@ conda packages.
 import os
 
 from wheel.util import native  # type: ignore
-from .tmpdirs import InTemporaryDirectory
-from .tools import tarbz2todir
+from wheeltools.tmpdirs import InTemporaryDirectory
+from wheeltools.tools import tarbz2todir
 
 
 class InCondaPkg(InTemporaryDirectory):

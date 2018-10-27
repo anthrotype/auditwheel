@@ -22,7 +22,7 @@ def execute(args, p):
     import os
     import sys
     from wheel.install import WHEEL_INFO_RE  # type: ignore
-    from .wheeltools import InWheelCtx, add_platforms, WheelToolsError
+    from wheeltools import InWheelCtx, add_platforms, WheelToolsError
     from .wheel_abi import analyze_wheel_abi
 
     wheel_abi = analyze_wheel_abi(args.WHEEL_FILE)
