@@ -2,3 +2,4 @@ pytest
 jsonschema
 numpy
 pypatchelf
+git+https://github.com/anthrotype/wheeltools.git#egg=wheeltools
